@@ -1,5 +1,9 @@
-node_modules
+node_modules/
 ormconfig.json
-.editorconfig
-.vscode
-config
+.vscode/
+src/config/auth.ts
+temp/
+build/
+
+tmp/*
+!tmp/.gitkeep
