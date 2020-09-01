@@ -14,7 +14,7 @@ usersRouter.post('/', async (req, res) => {
 
     const user = await createUser.execute({ name, email, password });
 
-    delete user.password;
+    delete user.password; // This is so it doesn't show the password in the res.json
 
     res.json(user);
   } catch (err) {
