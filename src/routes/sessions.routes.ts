@@ -1,10 +1,8 @@
 import { Router } from 'express';
-import bodyParser from 'body-parser';
 
 import AuthenticateUserService from '../services/AuthenticateUserService';
 
 const sessionsRouter = Router();
-sessionsRouter.use(bodyParser.json());
 
 sessionsRouter.post('/', async (req, res) => {
   try {
